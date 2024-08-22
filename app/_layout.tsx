@@ -3,13 +3,11 @@ import {
   DefaultTheme,
   ThemeProvider,
 } from "@react-navigation/native";
-import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
-import { useEffect } from "react";
 import "react-native-reanimated";
 import { useColorScheme } from "@/hooks/useColorScheme";
-import { useAuth0, Auth0Provider } from "react-native-auth0";
+import { Auth0Provider } from "react-native-auth0";
 import config from "@/auth0-config";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
